@@ -1,0 +1,16 @@
+.footer .row{
+    justify-content: center;
+}
+.searchResults .col .img{
+    width: min-content;
+}
+.searchResults{
+    margin-top: 50px;
+}
+.searchResults .col .img>img{
+    width: 250px;
+    height: 370px;
+}
+.searchResults .tag {
+    left: 50px;
+}

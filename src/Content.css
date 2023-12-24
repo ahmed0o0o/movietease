@@ -1,0 +1,255 @@
+body{
+    color: white;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#container{
+    margin-top: 50px;
+    background-color: var(--binaryColor);
+    border-radius: 15px;
+    padding: 0px 50px 20px;
+}
+.sectionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sectionTitle a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+    transition: .1s all linear;
+}
+.sectionTitle a:hover{
+    transform: scale(1.12);
+}
+.title{
+    text-decoration:underline;
+}
+.title a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.col{
+    display: grid;
+    place-items: center;
+    padding-bottom: 40px;
+}
+.rating{
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+img:hover{
+    cursor: pointer;
+}
+.col img{
+    height: 276px;
+    width: 183px;
+    border-radius: 5px;
+}
+.col .img{
+    position: relative;
+    width: min-content;
+}
+.col .img:hover{
+    cursor: pointer;
+}
+.col a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif,serif;
+    font-size: 17px;
+    padding-top: 15px;
+    text-align: center;
+}
+.search{
+    transition: all ease-out;
+    height: 35px;
+    border-bottom: rgba(245, 245, 245, 0.322) solid .1px;
+    outline: none;
+    padding: 5px 10px;
+    position: relative;
+}
+.right .img{
+    position: relative;
+    width: min-content;
+}
+.right .img img{
+    margin-right: 4px;
+}
+.right .tagTop{
+    position: absolute;
+    bottom: 20px;
+    right: 23px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 5px;
+    opacity: .8;
+    width: fit-content;
+}
+.right .tagTop .gonra,.tagTop .gonram{
+    background-color: green;
+    padding: 3px 10px;
+    border-radius: 7px 0px 7px 7px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.right .tagTop .gonra .eye{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    overflow: hidden;
+    width: 120px;
+}
+#tag1,#tag2,#tag3,#tag4,#tag5,#tag6,#tag7{
+    right: 0;
+}
+.col img {
+    transition: .3s all;
+}
+.col img:hover {
+    transform: scale(1.02);
+}
+.ratingSpan{
+    z-index: 5;
+    position: relative;
+    top: 9px;
+    right: 6.4px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.tag{
+    position: absolute;
+    bottom: 20px;
+    left: 23px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    opacity: .8;
+}
+#tag2{
+    left: 23vh;
+    bottom: 7vh;
+}
+.tag .gonra{
+    background-color: green;
+    padding: 3px 10px;
+    border-radius: 0px 7px 7px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.tag .gonra img{
+    margin-right: 5px;
+}
+.tag .age{
+    background-color: red;
+    padding: 2px 4px 1px 4px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 800;
+    color: white;
+    margin-left: 5px;
+    border: none;
+}
+.pageNumber{
+    border: .5px solid white;
+    margin-left: 5px;
+    padding: 5px 16px;
+    background: #ffffff26;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: .3s all;
+    font-family: monospace,cursive;
+}
+.pageNumber:hover{
+    background-color: grey;
+}
+.activePageNumber{
+    background-color: grey;
+}
+.pageNumbers{
+    display: flex;
+    justify-content: center;
+}
+.pageNumbers .active{
+    background-color: grey;
+}
+.pageNumbers .prev{
+    border-radius: 5px 0px 0px 5px;
+}
+.pageNumbers .next{
+    border-radius: 0px 5px 5px 0px;
+}
+.Dbuttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.link{
+    color: white;
+}
+.footerer .f-logo{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+@media(max-width:484px){
+    .col img{
+        height: 450px;
+        width: 280px;
+    }
+    .row .deleteOnPhone{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .row .deleteOnTablet{
+        display: none;
+    }
+    .right img{
+        width: 250px;
+    }
+    .search{
+        width: 100%;
+    }
+    #tag2{
+        left: 20vh;
+        bottom: 3vh;
+    }
+}
+@media(min-width:900px){
+    .right img{
+        margin-left: 100px;
+    }
+    .search{
+        margin-left:8px;
+    }
+    .Dbuttons{
+        gap: 7vh;
+    }
+}
+@media(min-width:1100px){
+    #tag2{
+        left: 24vh;
+    }
+}
+@media(min-width:1150px){
+    #tag2{
+        left: 32vh;
+    }
+}
+
+
