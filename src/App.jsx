@@ -44,8 +44,3 @@ function App() {
 }
 
 export default App
-
-// "homepage": "https://ahmed0o0o.github.io/movietease"
-
-// "predeploy": "npm run build",
-// "deploy": "gh-pages -d build",

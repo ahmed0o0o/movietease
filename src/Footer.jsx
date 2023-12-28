@@ -57,7 +57,7 @@ const Footer = () => ({
               </div>
               <br /><br />
               <div className="row">
-                <p className="cr">© 2023 All Rights Reserved. By OMDb</p>
+                <p className="cr">© 2023 All Rights Reserved</p>
               </div>
               <br /><br />
             </div>
